@@ -163,6 +163,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\GameMain.cs" />
+    <Compile Include="src\Directions.cs" />
+    <Compile Include="src\GameState.cs" />
+    <Compile Include="src\GameController.cs" />
+    <Compile Include="src\MenuController.cs" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />

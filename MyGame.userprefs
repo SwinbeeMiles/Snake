@@ -7,7 +7,10 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
     <Files>
-      <File FileName="src\GameMain.cs" Line="11" Column="62" />
+      <File FileName="src\GameMain.cs" Line="29" Column="2" />
+      <File FileName="src\Directions.cs" Line="11" Column="1" />
+      <File FileName="src\GameState.cs" Line="2" Column="1" />
+      <File FileName="src\GameController.cs" Line="2" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

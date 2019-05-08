@@ -72,16 +72,6 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\Direction.cs" />
-    <Compile Include="src\GameController.cs" />
-    <Compile Include="src\GameLogic.cs" />
-    <Compile Include="src\GameResources.cs" />
-    <Compile Include="src\GameState.cs" />
-    <Compile Include="src\InstructionsController.cs" />
-    <Compile Include="src\MenuController.cs" />
-    <Compile Include="src\UtilityFunctions.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="SwinGame">
       <HintPath>lib\SwinGame.dll</HintPath>
     </Reference>
@@ -170,6 +160,9 @@
     <WinLibraryFiles Include="lib\win\smpeg.dll" />
     <WinLibraryFiles Include="lib\win\swingame.rc" />
     <WinLibraryFiles Include="lib\win\zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\GameMain.cs" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />

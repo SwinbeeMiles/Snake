@@ -1,4 +1,3 @@
-using System;
 using SwinGameSDK;
 
 namespace MyGame
@@ -9,21 +8,18 @@ namespace MyGame
 		{
 			//Open the game window
 			SwinGame.OpenGraphicsWindow ("Super Snake by Team Delta", 1024, 768);
-			//SwinGame.ShowSwinGameSplashScreen();
+
+			GameResources.LoadResources ();
 
 			//Run the game loop
-			while (!(SwinGame.WindowCloseRequested () == true))
-            {
-                //Fetch the next batch of UI interaction
-                SwinGame.ProcessEvents();
-                
-                //Clear the screen and draw the framerate
-                SwinGame.ClearScreen(Color.White);
-                SwinGame.DrawFramerate(0,757);
-                
-                //Draw onto the screen
-                SwinGame.RefreshScreen(60);
+			while(!(true == SwinGame.WindowCloseRequested() || GameController.State == GameState.Quitting))
+			{
+
+				GameController.HandleUserInput ();
+				GameController.DrawScreen ();
             }
+
+			GameResources.FreeResources ();
         }
     }
 }

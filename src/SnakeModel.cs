@@ -4,8 +4,8 @@ namespace MyGame
 {
 	public static class SnakeModel
 	{
-		private static float _x = 800;
-		private static float _y = 600;
+		private static float _x = 400;
+		private static float _y = 300;
 
 		public static void MoveSnake (float x, float y)
 		{

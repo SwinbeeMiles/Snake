@@ -7,6 +7,7 @@ namespace MyGame
 		private static char _checkDirection;
 		private static float _moveSpeed = 2;
 
+
 		public static void SnakeController ()
 		{
 			if (SwinGame.KeyTyped (KeyCode.vk_UP)) {

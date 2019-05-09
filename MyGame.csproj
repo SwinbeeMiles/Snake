@@ -78,6 +78,7 @@
     <Compile Include="src\SnakeBody.cs" />
     <Compile Include="src\Edgy.cs" />
     <Compile Include="src\FoodGenerator.cs" />
+    <Compile Include="src\Food.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

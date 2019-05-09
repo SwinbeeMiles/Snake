@@ -21,6 +21,7 @@ namespace MyGame
 			SnakeBody.CreateSnakeBody ();
 			SnakeBody.CreateSnakeBody ();
 			SnakeBody.CreateSnakeBody ();
+			FoodGenerator.LetThereBeFood ();
             while(false == SwinGame.WindowCloseRequested())
             {
                 //Fetch the next batch of UI interaction
@@ -40,6 +41,8 @@ namespace MyGame
 				SnakeBody.Draw ();
 				GameControl.SnakeController ();
 				GameControl.SnakeMovement ();
+
+				FoodGenerator.DrawFood ();
 				//SnakeModel.DrawSnake ();
 				//GameControl.SnakeController ();
 				//GameControl.SnakeMovement ();

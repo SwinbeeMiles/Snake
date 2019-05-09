@@ -5,14 +5,15 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\FoodGenerator.cs">
     <Files>
-      <File FileName="src\GameMain.cs" Line="33" Column="7" />
-      <File FileName="src\SnakeModel.cs" Line="18" Column="4" />
-      <File FileName="src\SnakeBody.cs" Line="18" Column="43" />
-      <File FileName="src\GameControl.cs" Line="43" Column="1" />
+      <File FileName="src\GameMain.cs" Line="24" Column="36" />
+      <File FileName="src\SnakeModel.cs" Line="8" Column="26" />
+      <File FileName="src\SnakeBody.cs" Line="3" Column="1" />
+      <File FileName="src\GameControl.cs" Line="36" Column="6" />
       <File FileName="src\Edgy.cs" Line="12" Column="58" />
-      <File FileName="src\FoodGenerator.cs" Line="7" Column="4" />
+      <File FileName="src\Food.cs" Line="21" Column="4" />
+      <File FileName="src\FoodGenerator.cs" Line="17" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

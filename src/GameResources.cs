@@ -14,7 +14,7 @@ public static class GameResources
 	/// </summary>
 	private static void LoadFonts ()
 	{
-		NewFont ("Menu", "arial.ttf", 16);	}
+		NewFont ("Menu", "arial.ttf", 50);	}
 
 	/// <summary>
 	/// Gets a Font Loaded in the Resources

@@ -58,6 +58,7 @@ public sealed class GameController
 	/// </summary>
 	public static void StartGame ()
 	{
+		//Game initialisation when user press play
 		AddNewState (GameState.Playing);
 		SwinGame.ClearScreen(Color.White);	}
 
@@ -79,6 +80,7 @@ public sealed class GameController
 		{
 			MenuController.HandleGameMenuInput();
 		} else if (State == GameState.Playing) {
+			//Game input here
 			if (SwinGame.KeyTyped (KeyCode.vk_ESCAPE)) {
 				AddNewState (GameState.ViewingGameMenu);
 			}
@@ -97,7 +99,8 @@ public sealed class GameController
 			MenuController.DrawGameMenu ();
 		} else if (State == GameState.Playing)
 		{
-			
+			//Game graphics here
+			SwinGame.ClearScreen(Color.White);
 		}
 
 		SwinGame.RefreshScreen(120);

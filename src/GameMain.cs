@@ -9,6 +9,8 @@ namespace MyGame
 			//Open the game window
 			SwinGame.OpenGraphicsWindow ("Super Snake by Team Delta", 1024, 768);
 
+			SwinGame.ClearScreen(Color.White);
+
 			GameResources.LoadResources ();
 
 			//Run the game loop

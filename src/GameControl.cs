@@ -6,36 +6,33 @@ namespace MyGame
 	{
 		private static char _checkDirection;
 		private static float _moveSpeed = 2;
+
 		public static void SnakeController ()
 		{
 			if (SwinGame.KeyTyped (KeyCode.vk_UP)) {
-				SnakeModel.DrawSnake ();
 				_checkDirection = 'w';
 			} else if (SwinGame.KeyTyped (KeyCode.vk_LEFT)) {
-				SnakeModel.DrawSnake ();
 				_checkDirection = 'a';
 			} else if (SwinGame.KeyTyped (KeyCode.vk_RIGHT)) {
-				SnakeModel.DrawSnake ();
 				_checkDirection = 'd';
 			} else if (SwinGame.KeyTyped (KeyCode.vk_DOWN)) {
-				SnakeModel.DrawSnake ();
 				_checkDirection = 's';
 			}
 		}
 
+
 		public static void SnakeMovement ()
 		{
-			if (_checkDirection == 'w') {
-				SnakeModel.MoveSnake(0, -_moveSpeed);
-			}
-			else if (_checkDirection == 'a') {
-				SnakeModel.MoveSnake (-_moveSpeed,0);
-			}
-			else if (_checkDirection == 'd') {
-				SnakeModel.MoveSnake (_moveSpeed,0);
-			}
-			else if (_checkDirection == 's') {
-				SnakeModel.MoveSnake (0,_moveSpeed);
+			for (int x = 0; x < SnakeBody.SnakeBodyParts.Count; x++) {
+				if (_checkDirection == 'w') {
+					SnakeBody.SnakeBodyParts [x].MoveSnakeYaxis -= _moveSpeed;
+				} else if (_checkDirection == 'a') {
+					SnakeBody.SnakeBodyParts [x].MoveSnakeXaxis -= _moveSpeed;
+				} else if (_checkDirection == 'd') {
+					SnakeBody.SnakeBodyParts [x].MoveSnakeXaxis += _moveSpeed;
+				} else if (_checkDirection == 's') {
+					SnakeBody.SnakeBodyParts [x].MoveSnakeYaxis += _moveSpeed;
+				}
 			}
 		}
 

@@ -9,9 +9,18 @@ namespace MyGame
         {
             //Open the game window
             SwinGame.OpenGraphicsWindow("GameMain", 1024, 768);
-            //SwinGame.ShowSwinGameSplashScreen();
-            
-            //Run the game loop
+			//SwinGame.ShowSwinGameSplashScreen();
+			//Run the game loop
+			SnakeBody.CreateFirstSnake ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
+			SnakeBody.CreateSnakeBody ();
             while(false == SwinGame.WindowCloseRequested())
             {
                 //Fetch the next batch of UI interaction
@@ -23,11 +32,17 @@ namespace MyGame
 
 				//Draw onto the screen
 
-				FoodGenerator.LetThereBeFood (10);
+				//FoodGenerator.LetThereBeFood (10);
 				Edgy.LineEdge ();
-				SnakeModel.DrawSnake ();
+
+				//SnakeBody.CreateAddSnake (300, 400);
+				//SnakeBody.CreateAddSnake (200, 400);
+				SnakeBody.Draw ();
 				GameControl.SnakeController ();
 				GameControl.SnakeMovement ();
+				//SnakeModel.DrawSnake ();
+				//GameControl.SnakeController ();
+				//GameControl.SnakeMovement ();
                 SwinGame.RefreshScreen(60);
             }
         }
